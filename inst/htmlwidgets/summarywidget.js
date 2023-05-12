@@ -57,20 +57,20 @@ HTMLWidgets.widget({
 	  // change innerText so the text of the link will be a certain extract of information from the key string
           keys = Object.keys(d)
           if (keys.length == 1) {
-            value = keys;
-	    const valuestr = String(value[0])
-            const splitvals = valuestr.split("\\");
-	    const last3 = splitvals.slice(-3);
-	    const text = "Download workbook (Reporting period " + last3[0].substring(0, 4) + "/" + last3[0].substring(4) + ", " + last3[1] + ")"
-	    el.innerText = text;
+	    // const valuestr = String(keys[0]);
+            // const splitvals = valuestr.split("\\");
+	    // const allbutlast = arr.slice(0, -1);
+	    // value = [allbutlast, keys.slice(1)]
+	    value = 'Nana'
+	    el.innerText = "Go to folder";
           } else {
             value = '';
-	    el.innerText = "No data available";
+	    el.innerText = "No folder available";
           }
           
-          var elementExists = document.getElementsByClassName('summarywidget')[0];
+          var elementExists = document.getElementsByClassName('folderwidget')[0];
           if (elementExists !== null) {
-	    document.getElementsByClassName('summarywidget')[0].href = value; 
+	    document.getElementsByClassName('folderwidget')[0].href = value; 
   	  }
         };
 
