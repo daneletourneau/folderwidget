@@ -68,9 +68,9 @@ HTMLWidgets.widget({
 	    el.innerText = "No folder available";
           }
           
-          var elementExists = document.getElementsByClassName('folderwidget')[0];
+          var elementExists = document.getElementsByClassName('summarywidget')[1];
           if (elementExists !== null) {
-	    document.getElementsByClassName('folderwidget')[0].href = value; 
+	    document.getElementsByClassName('summarywidget')[1].href = value; 
   	  }
         };
 
