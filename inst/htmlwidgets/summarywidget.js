@@ -61,16 +61,16 @@ HTMLWidgets.widget({
             // const splitvals = valuestr.split("\\");
 	    // const allbutlast = arr.slice(0, -1);
 	    // value = [allbutlast, keys.slice(1)]
-	    value = 'Nana'
+	    value = keys;
 	    el.innerText = "Go to folder";
           } else {
             value = '';
 	    el.innerText = "No folder available";
           }
           
-          var elementExists = document.getElementsByClassName('summarywidget')[1];
+          var elementExists = document.getElementsByClassName('summarywidget')[0];
           if (elementExists !== null) {
-	    document.getElementsByClassName('summarywidget')[1].href = value; 
+	    document.getElementsByClassName('summarywidget')[0].href = value; 
   	  }
         };
 
