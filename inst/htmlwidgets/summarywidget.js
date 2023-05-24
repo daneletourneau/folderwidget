@@ -64,7 +64,7 @@ HTMLWidgets.widget({
 	    value = keys;
 	    el.innerText = "Go to folder";
           } else {
-            value = '';
+            value = 'google.com';
 	    el.innerText = "No folder available";
           }
           
